@@ -1,0 +1,73 @@
+/*General*/
+body {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+    background: url(foto/josh-felise-trvELSvNZoY-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+
+img{
+  border-radius: 20px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/*Classes*/
+.Home{
+  text-align: center;
+
+}
+
+/*Classes*/
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container>div{
+  margin: 0px;
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+/*ID*/
+#Home{
+  background-color: #EAC5D8;
+}
+
+#CV{
+  background-color:  #56cbf9;
+}
+
+#Ervaring{
+  background-color: white;
+}
+
+#Contact{
+  background-color: #EAC5D8;
+}
+
+#Hobby{
+  background-color:#56cbf9;
+}
+
+#Home:hover, #CV:hover, #Ervaring:hover, #Contact:hover, #Hobby:hover{
+  background-color: #494850;
+}
+
+.NavbarV a:hover{
+  color: white;
+}

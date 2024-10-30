@@ -1,0 +1,33 @@
+/*General*/
+body{
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+    background-color: #dbd8f0;
+  }
+
+img, h1{
+    position: relative;
+    left: 25%;
+}
+
+/*Classes*/
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-container>div{
+  background-color: #a31621;
+  margin: 5px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  border: black 2px solid;
+}

@@ -1,0 +1,66 @@
+/*General*/
+body{
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+    background: url(foto/aperture-vintage-SshYpuf607g-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+
+img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+table, tr, td{
+  border: 2px black solid;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+/*Classes*/
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-container>div{
+  background-color: #a31621;
+  margin: 5px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  border: black 2px solid;
+}
+
+/*ID's*/
+#TableHeader{
+  background-color:#a31621;
+}
+
+#TableRows{
+  background-color: #dbd8f0;
+  color: black;
+}
