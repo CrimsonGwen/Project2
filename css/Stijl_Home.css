@@ -18,13 +18,13 @@ Body {
   color: black;
 }
 
-img
+.Self
 {
   border-radius: 10%;
   width: 13%;
   position: absolute;
   left: 80%;
-  bottom: 45%;
+  bottom: 48%;
 }
 
 .Jumbotron
