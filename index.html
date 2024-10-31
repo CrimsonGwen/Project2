@@ -6,7 +6,8 @@
 <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!--CSS-->
-<link rel="Stylesheet" href="Stijl_Home.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/Stijl_Home.css" />
 <!--Favicon-->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!--Fonts-->
@@ -18,38 +19,52 @@
 </head>
 
 <body>
-    <!--Algemeen-->
-    <div class="Home">
-        <h1>
-        Welkom op mijn pagina!
-        </h1>
-        <img src="foto/20240716_175345.jpg" alt="Portrait foto" width="200" title="Placeholder">
-        <p>
-            Dit ben ik in het kort.
-            <br>
-            <br>
-            Mijn naam is Jitse (Gwen) Matthyssen, 27 jaar en transgender.
-            <br>
-            <br>
-            Mijn sterktes liggen vooral bij programmeren van PLC's en Autocad.
-            <br>
-            Mijn zwaktes zijn wiskunde en genoeg slapen.
-            <br>
-            <br>
-            Deze website is gemaakt om meer te delen over mezelf.
-            <br>
-            Gebruik de menu's hieronder om meer te ontdekken!
-        </p>
+<nav class="navbar navbar-expand-md" style="background-color: #dbd8f0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Crimson Forge</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Home</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Hobby_alg.html">Hobby</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="CV.html">CV</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Contact.html">Contact</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Projecten.html">Projecten</a>
+    </nav>
+  </div>
+</nav>
+<!--Algemeen-->
+<div class="Jumbotron">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welkom</h1>
+        <p class="col-md-8 fs-4 mx-auto">        
+            Mijn naam is Jitse (Gwen) Matthyssen, 27 jaar en transgender. <br>
+            Sterktes: Programmeren van PLC's en Autocad. <br>
+            Zwaktes: wiskunde en wbesites. <br> </p>
+            <img src="img/20240716_175345.jpg" alt="" >
+      </div>
     </div>
 
-    <!--Pagina verwijzingen--> 
-    <div class="flex-container">
-        <div id="Home"><a href="index.html"><strong>Home</strong></a></div>
-        <div id="Hobby"><a href="Hobby_alg.html"><strong>Hobby's</strong></a></div>
-        <div id="Ervaring"><a href="Ervaring.html"><strong>Ervaring</strong></a></div>
-        <div id="CV"><a href="CV.html"><strong>CV</strong></a></div>
-        <div id="Contact"><a href="Contact.html"><strong>Contact</strong></a></div>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Change the background</h2>
+          <p>Deze website is gemaakt om meer te delen over mezelf.
+            Gebruik de menu's hierboven om meer te ontdekken!
+          </p>
+        </div>
+      </div>
     </div>
-
+    <footer>
+        &copy; Jitse (Gwen) Matthyssen - 2024
+        <img src="img/instagram.svg" alt="" width="20" height="20">
+        <img src="img/twitter.svg" alt="" width="20" height="20">
+        <img src="img/discord.svg" alt="" width="20" height="20">
+    </footer> 
+  </div>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

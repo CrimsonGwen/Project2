@@ -1,0 +1,35 @@
+/*General*/
+Body {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  background-color: #eac5d8;
+  color: black;
+  text-align: center;
+}
+
+.nav
+{
+  text-decoration: none;
+  color: black;
+}
+
+img
+{
+  border-radius: 10%;
+  width: 13%;
+  position: absolute;
+  left: 80%;
+  bottom: 45%;
+}
+
+.Jumbotron
+{
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
