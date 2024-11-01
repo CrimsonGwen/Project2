@@ -4,8 +4,9 @@
 <!--Content-->
 <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<!--CSS-->
-<link rel="Stylesheet" href="Stijl_Contact.css" />
+<!--CSS (opgemaakt met bootstrap)-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/Stijl_Contact.css" />
 <!--Favicon-->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!--Fonts-->
@@ -15,40 +16,54 @@
 <!--Titel-->
 <title>Contact me!</title>
 </head>
-<body>
-    <h1>Contacteer mij!</h1>
-    <p>
-        Contacteer mij gerust om meer te weten of samen te werken via onderstaand formulier
-        of via dit e-mail adres:<a href="mailto:Gwen.Matthysen@gmail.com">Klik hier !</a><br>
-    </p>
-
-    <form action="https://tm-statweb.be/forms.php" method="post">
-        <div>
-            <label for="Voornaam">Voornaam:</label>
-            <input type="text" name="Voornaam" id="Voornaam"/>
-        </div>
-        <div>
-            <label for="Achternaam">Achternaam:</label>
-            <input type="text" name="Achternaam" id="Achternaam"/>
-        </div>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" name="mail" id="mail" required/>
-        </div>
-        <div>
-            <label for="Onderwerp">Onderwerp:</label>
-            <input type="text" name="Onderwerp" id="Onderwerp" required maxlength="30">
-        </div>
-        <div>
-            <label for="Vraag">Uw vraag:</label>
-            <div>
-                <textarea name="Vraag" id="Vraag" cols="40" rows="5" required></textarea>
-            </div>
-            <input type="submit" value="Verzenden">
-        </div>    
+<!--Pagina verwijzingen-->
+<nav class="navbar navbar-expand-md" style="background-color: #65cbf9;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Crimson Forge</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+<div class="collapse navbar-collapse">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="index.html" style="color: black;">Home</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Hobby_alg.html" style="color: black;">Hobby</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="CV.html" style="color: black;">CV</a>
+      <a class="flex-sm-fill text-sm-center nav-link active" href="Contact.html"  aria-current="page">Contact</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Projecten.html" style="color: black;">Projecten</a>
+    </nav>
+  </div>
+</nav>
+<div class="container">
+    <p class="h1">Contact pagina</p>
+    <form class="needs-validation" action="https://tm-statweb.be/forms.php" method="post" novalidate>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Voornaam</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" required />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Naam</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" required/>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">E-mailadres</label>
+        <input type="email" class="form-control" id="formGroupExampleInput3" required />
+      </div>
+      <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+        <option selected>Selecteer het onderwerp van uw vraag</option>
+        <option value="1">HTML/CSS</option>
+        <option value="2">C#</option>
+        <option value="3">Python</option>
+        <option value="4">PLC</option>
+      </select>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Uw vraag:</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
     </form>
-    <div class="flex-container">
-        <div><a href="index.html"><h3>Home</h3></a></div>   
-    </div>
+  </div>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
