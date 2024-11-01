@@ -5,8 +5,9 @@
 <!--Content-->
 <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<!--CSS-->
+<!--CSS (opgemaakt met bootstrap)-->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/Stijl_Hobby.css" />
 <!--Favicon-->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <!--Fonts-->
@@ -19,33 +20,249 @@
 
 <body>
 <!--Pagina verwijzingen--> 
-<nav class="navbar navbar-expand-lg" style="background-color: #eac5d8;">
+<nav class="navbar navbar-expand-md" style="background-color: #65cbf9;">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Crimson Forge</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Hobby_alg.html" style="background-color:#56cbf9;">Hobby</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="CV.html">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="Hobby_alg.html">Ervaring</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
-                </li>
-            </ul>
-          </div>
-    </div>
+<div class="collapse navbar-collapse">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="index.html" style="color: black;">Home</a>
+      <a class="flex-sm-fill text-sm-center nav-link active" href="Hobby_alg.html" aria-current="page">Hobby</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="CV.html" style="color: black;">CV</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Contact.html" style="color: black;">Contact</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="Projecten.html" style="color: black;">Projecten</a>
+    </nav>
+  </div>
 </nav>
+
+<div id="carouselExampleCaptions" class="carousel slide view-25 m-2">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/victor-freitas-hOuJYX2K5DA-unsplash.jpg" class="d-block w-100 img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fitness</h5>
+          <p>
+            Ik stel een grote prioriteit aan fitness. <br>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/glenn-carstens-peters-0woyPEJQ7jc-unsplash.jpg" class="d-block w-100 img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gaming</h5>
+          <p>
+            Om mij te ontspannen game ik regelmatig. <br>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/joshua-sortino-LqKhnDzSF-8-unsplash.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <h5>Projecten</h5>
+          <p>
+            Ik ben vaak bezig met het uitdenken van nieuwe ideën, die al dan niet realistisch zijn. <br>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/tyler-van-der-hoeven-_ok8uVzL2gI-unsplash.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Game dev</h5>
+          <p>
+            Op dit moment ben ik bezig met het leren van Unreal engine en Godot.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/fons-heijnsbroek-EFagnp6nGm4-unsplash.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block" >
+          <h5>Schrijven &amp; Lezen</h5>
+          <p>
+            Ik heb altijd graag gelezen, vooral geschiedenis en fantasy. <br> 
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/clay-banks-z_DkoUqgx6M-unsplash.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block" style="color: #777">
+          <h5>Anime &amp; manga </h5>
+          <p>
+            Verder ben ik ook grote fan van een aantal anime en manga. <br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+          Fitness
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>
+                Ik ben veel bezig met fitness.
+                <br>
+                Dit is zowel goed voor zowel de fysieke, en mentale gezondheid.
+            </p>
+    
+            <table>
+                <tr>
+                    <td><h4>Excercise</h4></td>
+                    <td><h4>Avg.</h4></td>
+                </tr>
+                <tr>
+                    <td>Deadlift</td>
+                    <td>60 kg</td>
+                </tr>
+                <tr>
+                    <td>Squat</td>
+                    <td>60 kg</td>
+                </tr>
+                <tr>
+                    <td>Cable row</td>
+                    <td>15 kg</td>
+                </tr>
+                <tr>
+                    <td>Bulgarian Split squat</td>
+                    <td>10 kg</td>
+                </tr>
+                <tr>
+                    <td>Tricep push down</td>
+                    <td>16 kg</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Gaming
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>
+                Om mij te ontspannen game ik veel. <br>
+                Favoriete spelen zijn: <br>
+                - World of Warcraft <br>
+                - Final Fantasy 14 <br>
+                - Fallout New Vegas & 4 <br>
+                <br>
+                Maar het stopt zeker niet bij deze! <br>
+                Ik ben recent dan ook begonnen met het maken van mijn eigen spel. <br>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Projecten
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>
+                Ik ben vaak bezig met het uitdenken van nieuwe ideën, die al dan niet realistisch zijn. <br>
+                Waaronder een automatisch goederentransport ondergronds (of door de lucht) of een huishoudelijk aquaponisch systeem. <br>
+                
+                Hieronder een kleine lijst van de dingen in mijn hoofd.
+                <ul>
+                    <li>Ondergronds goederentransport</li>
+                    <li>Aquaponics</li>
+                    <li>Carbon capture met omzetting naar bio fuel</li>
+                    <li>Luchtship transport</li>
+                    <li>TBA</li>
+                </ul>
+                Enkele van deze projecten zijn te combineren later. <br>
+                De eerste stap is het maken van proof of concepts, deze zullen hier ook opgevolgd worden met milestones. <br>
+                Voor het ondergronds goederentransport heb ik ook mijn eindwerk gemaakt in het secundair, toen was er enkel nog een artikel over een mogelijk project in Zwitserland met hetzelfde concept. <br>
+                Ondertussen heb ik geleerd dat dit project daar ook definitief onderweg is en in opbouw. <br>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Game dev
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Op dit moment ben ik bezig met het leren van Unreal engine en Godot.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Schrijven &amp; Lezen
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+                Ik heb altijd graag gelezen, vooral geschiedenis en fantasy. <br>
+                Daar is dan de interesse uit ontstaan om zelf te schrijven, al combineer ik dit stuk vooral bij het zelf maken van een game. <br>
+                Hierbij komt een grote nieuwsgierigheid en interesse naar mythologie bij te kijken. <br><br>
+    
+                Onder mijn favorieten zitten Game of Thrones en Lord of The Rings. <br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Anime &amp; manga
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+                Verder ben ik ook grote fan van een aantal anime en manga. <br><br>
+                Dit wordt vaak als raar bekeken, en toegegeven er zijn veel negatieve punten aan te halen. <br>
+                Toch vindt ik dat dit medium zeer inspirirerend kan zijn en voor sommige thema beter werkt dan live action. <br>
+                Daarbij kunnen bepaalde thema op een laagdrempelige manier aan een breed publiek worden aangebracht. <br>
+
+                Enkele van mijn favorieten zijn. <br>
+                Fairy Tail, Frieren, Demon Slayer en meer.
+            </p>
+          </div>
+        </div>
+      </div>
+    <footer class="Footer">
+        &copy; Jitse (Gwen) Matthyssen - 2024
+        <img src="img/instagram.svg" alt="" width="30" height="30">
+        <img src="img/twitter.svg" alt="" width="30" height="30">
+        <img src="img/discord.svg" alt="" width="30" height="30">
+    </footer>
+  </div>
+
+
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
